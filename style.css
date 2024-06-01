@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(img/image1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    padding: 5px;
+    margin-top: -1.6em;
+}
+
+header nav .logo > img{
+    height: 130px;
+}
+
+header nav .logo > img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-text ul{
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.nav-text ul li{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.nav-text ul li:hover{
+    background-color: #0B3E91;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hero{
+    margin: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1{
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-text h1 span{
+    color: #1a4486;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-text p{
+    color: #fff;
+    font-size: 14px;
+}
+
+.hero-btn{
+    margin-top: 20px;
+}
+
+.hero-btn .button{
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid red;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+.hero-btn button:hover{
+    background-color: red;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.about{
+    background: url(img/image2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+
+.about-img img{
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.about-text{
+    /* color: #fff; */
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.about-text h2{
+    color: red;
+}
+
+.about-text p{
+    width: 80%;
+    color: black;
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.tech{
+    background-color: rgb(71, 69, 69);
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+}
+
+.tech .tech-heading h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tech .tech-heading h2 span{
+    color: red;
+}
+
+.techCards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.techCards .card{
+    background-color: #fff;
+    height: auto;
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    height: 450px;
+    margin: 20px;
+    margin-left: -1em;
+}
+
+.techCards .card img{
+    height: 300px;
+    width: 400px;
+}
+
+.techCards .card h3{
+    font-size: 20px !important;
+}
+
+.techCards .card p,
+.techCards .card h3
+{
+    font-size: 14px;
+    margin: 5px;
+}
+
+.techCards .card:hover{
+    box-shadow: 2px 5px 10px 3px #646668;
+    transition: 0.5s ease;
+}
+
+.feedback{
+    background-color: #1a4486;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+}
+
+.feedback .feedback-head h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.feedbackForm{
+    padding: 30px;
+}
+
+.feedbackForm .firstLine input{
+    width: 400px;
+    height: 5vh;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+.feedbackForm .lastLine input{
+    margin-top: 20px;
+    height: 50px;
+    width: 300px;
+    padding: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.feedbackForm .lastLine button{
+    padding: 10px;
+    width: 100px;
+    height: 5vh;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid red;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Marko One', sans-serif;
+}
+
+.feedbackForm .lastLine button:hover{
+    background-color: transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin-top: 1em;
+}
+
+footer p span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+@media (max-width: 450px){
+    html,body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header{
+        margin-left: -1.2em;
+
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+    }
+
+    .nav-text ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-text ul li {
+        font-size: 12px;
+        margin-top: -1em;
+    }
+
+    .hero{
+        height: 300px;
+        width: 100%;
+        margin-left: -2em;
+    }
+
+
+    .hero-text h1,
+    .hero-text h1 span
+    {
+        font-size: 30px;
+    }
+
+    .hero-text p{
+        font-size: 10px;
+        width: 60%;
+        margin-left: 10em;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+
+    .tech{
+        height: 180vh;
+        text-align: center;
+    }
+
+    .techCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .techCards .card{
+        width: 300px;
+    }
+
+    .techCards .card img{
+        width: 300px;
+    }
+
+    .techCards .card p{
+        font-size: 10px;
+    }
+
+    .feedback{
+        height: 800px;
+    }
+
+    .feedbackForm .firstLine{
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .feedbackForm .firstLine input{
+        margin-left: -10em;
+        margin-bottom: 1em;
+    }
+
+    .feedbackForm .lastLine{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        margin-top: -5em;
+    }
+
+    .feedbackForm .lastLine input{
+        margin-left: -10em;
+        margin-right: -12em;
+        margin-bottom: 1em;
+    }
+
+    footer{
+        height: 8vh;
+    }
+
+}

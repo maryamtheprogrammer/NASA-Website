@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.avif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/main-logo-removebg-preview.png" alt="NAv-logo">
+            </div>
+
+            <div class="nav-text">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Technologies</li>
+                    <li>Feedback</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Welcome to <span>NASA</span> World!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maxime voluptatibus cum velit.</p>
+        </div>
+
+        <div class="hero-btn">
+            <button class="button">Learn More</button>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="about-img">
+            <img src="img/image3.jpg" alt="aboutimg">
+        </div>
+
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officia veritatis in, quidem, obcaecati omnis quos dicta eligendi ratione consequatur quam, suscipit officiis. Similique ipsum nesciunt rerum ducimus iure blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sequi velit eaque magni voluptas nulla doloremque magnam reiciendis labore minima dicta sunt officiis optio esse ratione consequuntur atque, unde laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, facere error asperiores accusamus quam aperiam nobis repellat similique facilis. Amet neque nulla delectus saepe sequi unde blanditiis laudantium recusandae aut.</p>
+        </div>
+
+    </section>
+
+    <section class="tech">
+        <div class="tech-heading">
+            <h2><span>NASA</span> Technologies</h2>
+        </div>
+        <div class="techCards">
+            <div class="card">
+                <img src="img/card1.avif" alt="card-img">
+                <h3>Moon Landing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dolores autem esse sit doloribus blanditiis, nisi a non suscipit deleniti animi alias incidunt quo quia laborum sapiente! Necessitatibus, vitae perspiciatis?</p>
+            </div>
+            <div class="card">
+                <img src="img/card2.webp" alt="card-img">
+                <h3>Mission Mars</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dolores autem esse sit doloribus blanditiis, nisi a non suscipit deleniti animi alias incidunt quo quia laborum sapiente! Necessitatibus, vitae perspiciatis?</p>
+            </div>
+            <div class="card">
+                <img src="img/card3.avif" alt="card-img">
+                <h3>Black Hole Discovery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dolores autem esse sit doloribus blanditiis, nisi a non suscipit deleniti animi alias incidunt quo quia laborum sapiente! Necessitatibus, vitae perspiciatis?</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="feedback">
+        <div class="feedback-head">
+            <h2>Give us your Feedback 😊</h2>
+        </div>
+
+        <div class="feedbackForm">
+          <form>
+            <div class="firstLine">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="text" placeholder="Enter Your Country/Region" required>
+            </div>
+
+            <div class="lastLine">
+                <input type="text" placeholder="Write your message here...." maxlength="100">
+
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+          </form>
+    </div>
+    
+    <footer>
+        <p>&copy; All Rights Reserved NASA | Made with ❤️ by <span>Maryam Zohra</span></p>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        let userName = prompt('Enter your Name')
+        alert('Hi' + " " + userName + '!')
+
+        let visit = prompt('Do you want to visit my site?')
+
+        if (visit === 'yes') {
+            alert('Welcome to my website' + " " + userName)
+            
+        }
+
+        else{
+            alert('As you wish, you may leave this website.')
+        }
+        
+    </script>
+</body>
+</html>
